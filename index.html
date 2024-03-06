@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form Validation</title>
+   <!-- Custom Css Link -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <div class="wrapper">
+      <div class="container">
+         <p>Sign Up Page</p>
+         <form action="#">
+
+            <div class="field">
+               <div class="input-field">
+                  <label for="firstname">First Name</label>
+                  <input class="input" type="text" id="firstname" placeholder="Enter First Name" value="Naresh"
+                     required>
+               </div>
+
+               <div class="input-field">
+                  <label for="lastname">Last Name</label>
+                  <input class="input" type="text" id="lastname" placeholder="Enter Last Name" value="Chauhan" required>
+               </div>
+
+               <div class="input-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Enter Email Address" value="nareshsingh0170@gmail.com"
+                     required>
+               </div>
+
+               <div class="input-field">
+                  <label for="mobilenumber">Mobile Number</label>
+                  <input type="text" id="mobilenumber" placeholder="Enter Mobile Number" value="9149499148" required>
+               </div>
+
+               <div class="input-field date">
+                  <label for="dateofbirth">Date Of Birth</label>
+                  <input type="date" id="dateofbirth" value="2001-04-10" required>
+               </div>
+
+               <div class="input-field">
+                  <label for="gender">Gender</label>
+                  <input class="input" type="text" id="gender" placeholder="Eg. Male & Female" value="Male" required>
+               </div>
+
+               <div class="input-field">
+                  <label for="occupation">Occupation</label>
+                  <input class="input" type="text" id="occupation" placeholder="Enter Your Cccupation" value="Student"
+                     required>
+               </div>
+
+               <div class="input-field">
+                  <label for="country">Country</label>
+                  <input class="input" type="text" id="country" placeholder="Enter Your Country" value="India" required>
+               </div>
+
+               <div class="input-field">
+                  <label for="state">State</label>
+                  <input class="input" type="text" id="state" placeholder="Enter Your State" value="Uttarakhand"
+                     required>
+               </div>
+
+               <div class="input-field">
+                  <label for="city">City</label>
+                  <input class="input" type="text" id="city" placeholder="Enter Your State" value="Dehradun" required>
+               </div>
+
+               <div class="input-field">
+                  <label for="address">Address</label>
+                  <input class="input" type="text" id="address" placeholder="Enter Your Address" value="Tapovan"
+                     required>
+               </div>
+
+               <div class="input-field">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" placeholder="Enter Password" value="12345" required>
+               </div>
+
+               <div class="input-field">
+                  <label for="confirmpassword">Confirm Password</label>
+                  <input type="password" id="address" placeholder="Enter Confirm Password" value="12345" required>
+               </div>
+            </div>
+
+
+            <div class="button">
+               <button>
+                  Submit
+                  <i class="fa-regular fa-paper-plane"></i>
+               </button>
+               <input type="reset" />
+            </div>
+
+         </form>
+      </div>
+   </div>
+
+   <!-- Custom Js Link -->
+   <script src="js/app.js"></script>
+
+   <!-- Font Awesome Icon Link -->
+   <script src="https://kit.fontawesome.com/383c0fae97.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

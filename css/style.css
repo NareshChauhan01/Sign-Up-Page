@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*Utility Classes*/
+.border {
+    border: 1px solid black;
+}
+
+.wrapper {
+    border: 1px solid green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #52796f;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    height: 600px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+.container form .field {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1.5rem 1.2rem;
+}
+
+.wrapper p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper .input-field {
+    width: calc(100% / 3 - 15px);
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .input-field label {
+    margin: 0 0 5px 3px;
+    color: #2e2e2e;
+}
+
+.wrapper .input-field input {
+    color: #333;
+    height: 42px;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form .input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.button {
+    margin-top: 1.6rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.button input,
+.button button {
+    height: 42px;
+    width: 24%;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: #52796f;
+    transition: all .4s ease-in-out;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.button button {
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    display: flex;
+}
+.button button i{
+    font-size: 15px;
+}
+
+.button input:hover {
+    background-color: #3a5a40;
+}
+
+@media (max-width:890px) {
+    .container {
+        height: max-content;
+    }
+
+    .wrapper .input-field {
+        width: calc(100% / 2 - 15px);
+
+    }
+}
+
+@media (max-width:676px) {
+    .wrapper {
+        padding: 1.5rem;
+        height: max-content;
+        background-color: #FFFFFF;
+    }
+
+    .wrapper .input-field {
+        width: calc(100% / 1 - 15px);
+    }
+
+    .button input {
+        width: 100px;
+    }
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 50px;
+}
+
+.select-box {
+    height: 42px;
+    margin-top: 24px;
+    border-radius: 6px;
+    border: none;
+    appearance: none;
+    padding: 0px 30px 0 15px;
+    width: 100%;
+    border: 1px solid #AAA;
+    /* color: #FFFFFF; */
+    /* background: #2873ff; */
+    cursor: pointer;
+    outline: none;
+}
+
+
+.icon-container {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
